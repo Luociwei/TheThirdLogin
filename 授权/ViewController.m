@@ -7,10 +7,12 @@
 //
 
 #import "ViewController.h"
-
+#import "WXApi.h"
+#import "AppDelegate.h"
 #import "testViewController.h"
 #import <TencentOpenAPI/TencentOAuth.h>
 #import <TencentOpenAPI/TencentApiInterface.h>
+#import "AFNetworking.h"
 
 @interface ViewController ()<TencentSessionDelegate>
 @property (nonatomic,strong)TencentOAuth *tencentOAuth;
@@ -19,6 +21,9 @@
 @end
 
 @implementation ViewController
+{
+    AppDelegate *appdelegate;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -27,7 +32,7 @@
     [btn setTitle:@"login" forState:UIControlStateNormal];
     [self.view addSubview:btn];
     btn.backgroundColor = [UIColor orangeColor];
-    [btn addTarget:self action:@selector(login) forControlEvents:UIControlEventTouchDown];
+    [btn addTarget:self action:@selector(sendAuthRequest) forControlEvents:UIControlEventTouchDown];
 }
 
 //-(TencentOAuth *)tencentOAuth
@@ -47,15 +52,15 @@
 //}
 -(void)login
 {
-    //[self presentViewController:[testViewController new] animated:YES completion:nil];
+    [self presentViewController:[testViewController new] animated:YES completion:nil];
 
-    _tencentOAuth=[[TencentOAuth alloc]initWithAppId:@"1106520888" andDelegate:self];
-    
-    //设置权限数据 ， 具体的权限名，在sdkdef.h 文件中查看。
-    _permissions = [NSMutableArray arrayWithObjects: kOPEN_PERMISSION_GET_SIMPLE_USER_INFO,nil];
-    
-    //登录操作
-    [_tencentOAuth authorize:_permissions inSafari:NO];
+//    _tencentOAuth=[[TencentOAuth alloc]initWithAppId:@"1106520888" andDelegate:self];
+//    
+//    //设置权限数据 ， 具体的权限名，在sdkdef.h 文件中查看。
+//    _permissions = [NSMutableArray arrayWithObjects: kOPEN_PERMISSION_GET_SIMPLE_USER_INFO,nil];
+//    
+//    //登录操作
+//    [_tencentOAuth authorize:_permissions inSafari:NO];
 
 
 
@@ -190,6 +195,19 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+#pragma mark 微信登录
+-(void)sendAuthRequest
+{
+    //构造SendAuthReq结构体
+    SendAuthReq* req =[[SendAuthReq alloc ] init];
+    req.scope = @"snsapi_userinfo" ;
+    req.state = @"123" ;
+    
+    //第三方向微信终端发送一个SendAuthReq消息结构
+    [WXApi sendReq:req];
 }
 
 @end

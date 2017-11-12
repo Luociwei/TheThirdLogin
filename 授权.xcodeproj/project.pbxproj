@@ -15,15 +15,17 @@
 		5D3F67161F9B652F00DE90E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D3F67141F9B652F00DE90E5 /* LaunchScreen.storyboard */; };
 		5D3F67211F9B652F00DE90E5 /* __Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3F67201F9B652F00DE90E5 /* __Tests.m */; };
 		5D3F672C1F9B652F00DE90E5 /* __UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3F672B1F9B652F00DE90E5 /* __UITests.m */; };
-		5D3F67511F9B66F000DE90E5 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3F67451F9B66F000DE90E5 /* AFHTTPSessionManager.m */; };
-		5D3F67521F9B66F000DE90E5 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3F67481F9B66F000DE90E5 /* AFNetworkReachabilityManager.m */; };
-		5D3F67531F9B66F000DE90E5 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3F674A1F9B66F000DE90E5 /* AFSecurityPolicy.m */; };
-		5D3F67541F9B66F000DE90E5 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3F674C1F9B66F000DE90E5 /* AFURLRequestSerialization.m */; };
-		5D3F67551F9B66F000DE90E5 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3F674E1F9B66F000DE90E5 /* AFURLResponseSerialization.m */; };
-		5D3F67561F9B66F000DE90E5 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3F67501F9B66F000DE90E5 /* AFURLSessionManager.m */; };
 		5D3F67591F9B694100DE90E5 /* testViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3F67581F9B694100DE90E5 /* testViewController.m */; };
 		5D3F675C1F9B707500DE90E5 /* model.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3F675B1F9B707500DE90E5 /* model.m */; };
-		5D3F675F1F9B7D6C00DE90E5 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3F675E1F9B7D6C00DE90E5 /* MBProgressHUD.m */; };
+		5D5274451FB87A8200E7BAAE /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D5274441FB87A8200E7BAAE /* libWeChatSDK.a */; };
+		5D5274471FB87C0A00E7BAAE /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D5274461FB87C0A00E7BAAE /* libsqlite3.0.tbd */; };
+		5D52745C1FB87FFE00E7BAAE /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D52744B1FB87FFE00E7BAAE /* AFHTTPSessionManager.m */; };
+		5D52745D1FB87FFE00E7BAAE /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D52744E1FB87FFE00E7BAAE /* AFNetworkReachabilityManager.m */; };
+		5D52745E1FB87FFE00E7BAAE /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5274501FB87FFE00E7BAAE /* AFSecurityPolicy.m */; };
+		5D52745F1FB87FFE00E7BAAE /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5274521FB87FFE00E7BAAE /* AFURLRequestSerialization.m */; };
+		5D5274601FB87FFE00E7BAAE /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5274541FB87FFE00E7BAAE /* AFURLResponseSerialization.m */; };
+		5D5274611FB87FFE00E7BAAE /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5274561FB87FFE00E7BAAE /* AFURLSessionManager.m */; };
+		5D5274621FB87FFE00E7BAAE /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5274581FB87FFE00E7BAAE /* MBProgressHUD.m */; };
 		5D9789661FB7513100A5BE50 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D9789651FB7513100A5BE50 /* Security.framework */; };
 		5D9789681FB7513900A5BE50 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D9789671FB7513900A5BE50 /* libiconv.tbd */; };
 		5D97896A1FB7514000A5BE50 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D9789691FB7514000A5BE50 /* SystemConfiguration.framework */; };
@@ -70,25 +72,33 @@
 		5D3F67271F9B652F00DE90E5 /* 授权UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "授权UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D3F672B1F9B652F00DE90E5 /* __UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __UITests.m; sourceTree = "<group>"; };
 		5D3F672D1F9B652F00DE90E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5D3F67441F9B66F000DE90E5 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
-		5D3F67451F9B66F000DE90E5 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
-		5D3F67461F9B66F000DE90E5 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
-		5D3F67471F9B66F000DE90E5 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
-		5D3F67481F9B66F000DE90E5 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
-		5D3F67491F9B66F000DE90E5 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
-		5D3F674A1F9B66F000DE90E5 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
-		5D3F674B1F9B66F000DE90E5 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
-		5D3F674C1F9B66F000DE90E5 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
-		5D3F674D1F9B66F000DE90E5 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
-		5D3F674E1F9B66F000DE90E5 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
-		5D3F674F1F9B66F000DE90E5 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
-		5D3F67501F9B66F000DE90E5 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		5D3F67571F9B694100DE90E5 /* testViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testViewController.h; sourceTree = "<group>"; };
 		5D3F67581F9B694100DE90E5 /* testViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testViewController.m; sourceTree = "<group>"; };
 		5D3F675A1F9B707500DE90E5 /* model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = model.h; sourceTree = "<group>"; };
 		5D3F675B1F9B707500DE90E5 /* model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = model.m; sourceTree = "<group>"; };
-		5D3F675D1F9B7D6C00DE90E5 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		5D3F675E1F9B7D6C00DE90E5 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		5D5274441FB87A8200E7BAAE /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = "授权/libWeChatSDK.a"; sourceTree = "<group>"; };
+		5D5274461FB87C0A00E7BAAE /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		5D52744A1FB87FFE00E7BAAE /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		5D52744B1FB87FFE00E7BAAE /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		5D52744C1FB87FFE00E7BAAE /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		5D52744D1FB87FFE00E7BAAE /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		5D52744E1FB87FFE00E7BAAE /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		5D52744F1FB87FFE00E7BAAE /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		5D5274501FB87FFE00E7BAAE /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		5D5274511FB87FFE00E7BAAE /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		5D5274521FB87FFE00E7BAAE /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		5D5274531FB87FFE00E7BAAE /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		5D5274541FB87FFE00E7BAAE /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		5D5274551FB87FFE00E7BAAE /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		5D5274561FB87FFE00E7BAAE /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		5D5274571FB87FFE00E7BAAE /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		5D5274581FB87FFE00E7BAAE /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		5D5274591FB87FFE00E7BAAE /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		5D52745A1FB87FFE00E7BAAE /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		5D52745B1FB87FFE00E7BAAE /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		5D5274631FB88F4800E7BAAE /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
+		5D5274661FB88FA600E7BAAE /* test1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test1.h; sourceTree = "<group>"; };
+		5D5274691FB88FD300E7BAAE /* test2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = test2.h; path = ../test2.h; sourceTree = "<group>"; };
 		5D9789651FB7513100A5BE50 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		5D9789671FB7513900A5BE50 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		5D9789691FB7514000A5BE50 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -106,10 +116,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D5274471FB87C0A00E7BAAE /* libsqlite3.0.tbd in Frameworks */,
 				5D9789741FB7516C00A5BE50 /* libz.tbd in Frameworks */,
 				5D9789791FB754DC00A5BE50 /* TencentOpenAPI.framework in Frameworks */,
 				5D9789721FB7516000A5BE50 /* libstdc++.tbd in Frameworks */,
 				5D9789701FB7515700A5BE50 /* CoreTelephony.framework in Frameworks */,
+				5D5274451FB87A8200E7BAAE /* libWeChatSDK.a in Frameworks */,
 				5D97896E1FB7515000A5BE50 /* libsqlite3.tbd in Frameworks */,
 				5D97896C1FB7514800A5BE50 /* CoreGraphics.framework in Frameworks */,
 				5D97896A1FB7514000A5BE50 /* SystemConfiguration.framework in Frameworks */,
@@ -159,10 +171,8 @@
 		5D3F67051F9B652F00DE90E5 /* 授权 */ = {
 			isa = PBXGroup;
 			children = (
+				5D5274481FB87FFE00E7BAAE /* Vendor(第三方) */,
 				5D9789761FB754D700A5BE50 /* TencentOpenApi_IOS_Bundle.bundle */,
-				5D3F675D1F9B7D6C00DE90E5 /* MBProgressHUD.h */,
-				5D3F675E1F9B7D6C00DE90E5 /* MBProgressHUD.m */,
-				5D3F67431F9B66F000DE90E5 /* AFNetworking */,
 				5D3F67091F9B652F00DE90E5 /* AppDelegate.h */,
 				5D3F670A1F9B652F00DE90E5 /* AppDelegate.m */,
 				5D3F670C1F9B652F00DE90E5 /* ViewController.h */,
@@ -176,6 +186,9 @@
 				5D3F67141F9B652F00DE90E5 /* LaunchScreen.storyboard */,
 				5D3F67171F9B652F00DE90E5 /* Info.plist */,
 				5D3F67061F9B652F00DE90E5 /* Supporting Files */,
+				5D5274631FB88F4800E7BAAE /* test.h */,
+				5D5274691FB88FD300E7BAAE /* test2.h */,
+				5D5274661FB88FA600E7BAAE /* test1.h */,
 			);
 			path = "授权";
 			sourceTree = "<group>";
@@ -206,22 +219,35 @@
 			path = "授权UITests";
 			sourceTree = "<group>";
 		};
-		5D3F67431F9B66F000DE90E5 /* AFNetworking */ = {
+		5D5274481FB87FFE00E7BAAE /* Vendor(第三方) */ = {
 			isa = PBXGroup;
 			children = (
-				5D3F67441F9B66F000DE90E5 /* AFHTTPSessionManager.h */,
-				5D3F67451F9B66F000DE90E5 /* AFHTTPSessionManager.m */,
-				5D3F67461F9B66F000DE90E5 /* AFNetworking.h */,
-				5D3F67471F9B66F000DE90E5 /* AFNetworkReachabilityManager.h */,
-				5D3F67481F9B66F000DE90E5 /* AFNetworkReachabilityManager.m */,
-				5D3F67491F9B66F000DE90E5 /* AFSecurityPolicy.h */,
-				5D3F674A1F9B66F000DE90E5 /* AFSecurityPolicy.m */,
-				5D3F674B1F9B66F000DE90E5 /* AFURLRequestSerialization.h */,
-				5D3F674C1F9B66F000DE90E5 /* AFURLRequestSerialization.m */,
-				5D3F674D1F9B66F000DE90E5 /* AFURLResponseSerialization.h */,
-				5D3F674E1F9B66F000DE90E5 /* AFURLResponseSerialization.m */,
-				5D3F674F1F9B66F000DE90E5 /* AFURLSessionManager.h */,
-				5D3F67501F9B66F000DE90E5 /* AFURLSessionManager.m */,
+				5D5274491FB87FFE00E7BAAE /* AFNetworking */,
+				5D5274571FB87FFE00E7BAAE /* MBProgressHUD.h */,
+				5D5274581FB87FFE00E7BAAE /* MBProgressHUD.m */,
+				5D5274591FB87FFE00E7BAAE /* WechatAuthSDK.h */,
+				5D52745A1FB87FFE00E7BAAE /* WXApi.h */,
+				5D52745B1FB87FFE00E7BAAE /* WXApiObject.h */,
+			);
+			path = "Vendor(第三方)";
+			sourceTree = "<group>";
+		};
+		5D5274491FB87FFE00E7BAAE /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				5D52744A1FB87FFE00E7BAAE /* AFHTTPSessionManager.h */,
+				5D52744B1FB87FFE00E7BAAE /* AFHTTPSessionManager.m */,
+				5D52744C1FB87FFE00E7BAAE /* AFNetworking.h */,
+				5D52744D1FB87FFE00E7BAAE /* AFNetworkReachabilityManager.h */,
+				5D52744E1FB87FFE00E7BAAE /* AFNetworkReachabilityManager.m */,
+				5D52744F1FB87FFE00E7BAAE /* AFSecurityPolicy.h */,
+				5D5274501FB87FFE00E7BAAE /* AFSecurityPolicy.m */,
+				5D5274511FB87FFE00E7BAAE /* AFURLRequestSerialization.h */,
+				5D5274521FB87FFE00E7BAAE /* AFURLRequestSerialization.m */,
+				5D5274531FB87FFE00E7BAAE /* AFURLResponseSerialization.h */,
+				5D5274541FB87FFE00E7BAAE /* AFURLResponseSerialization.m */,
+				5D5274551FB87FFE00E7BAAE /* AFURLSessionManager.h */,
+				5D5274561FB87FFE00E7BAAE /* AFURLSessionManager.m */,
 			);
 			path = AFNetworking;
 			sourceTree = "<group>";
@@ -229,6 +255,8 @@
 		5D9789641FB7513100A5BE50 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5D5274461FB87C0A00E7BAAE /* libsqlite3.0.tbd */,
+				5D5274441FB87A8200E7BAAE /* libWeChatSDK.a */,
 				5D9789781FB754DC00A5BE50 /* TencentOpenAPI.framework */,
 				5D9789731FB7516C00A5BE50 /* libz.tbd */,
 				5D9789711FB7516000A5BE50 /* libstdc++.tbd */,
@@ -376,18 +404,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D3F67561F9B66F000DE90E5 /* AFURLSessionManager.m in Sources */,
+				5D52745E1FB87FFE00E7BAAE /* AFSecurityPolicy.m in Sources */,
 				5D3F675C1F9B707500DE90E5 /* model.m in Sources */,
 				5D3F670E1F9B652F00DE90E5 /* ViewController.m in Sources */,
 				5D3F670B1F9B652F00DE90E5 /* AppDelegate.m in Sources */,
-				5D3F67521F9B66F000DE90E5 /* AFNetworkReachabilityManager.m in Sources */,
 				5D3F67591F9B694100DE90E5 /* testViewController.m in Sources */,
+				5D5274621FB87FFE00E7BAAE /* MBProgressHUD.m in Sources */,
+				5D52745F1FB87FFE00E7BAAE /* AFURLRequestSerialization.m in Sources */,
 				5D3F67081F9B652F00DE90E5 /* main.m in Sources */,
-				5D3F675F1F9B7D6C00DE90E5 /* MBProgressHUD.m in Sources */,
-				5D3F67531F9B66F000DE90E5 /* AFSecurityPolicy.m in Sources */,
-				5D3F67541F9B66F000DE90E5 /* AFURLRequestSerialization.m in Sources */,
-				5D3F67551F9B66F000DE90E5 /* AFURLResponseSerialization.m in Sources */,
-				5D3F67511F9B66F000DE90E5 /* AFHTTPSessionManager.m in Sources */,
+				5D5274611FB87FFE00E7BAAE /* AFURLSessionManager.m in Sources */,
+				5D5274601FB87FFE00E7BAAE /* AFURLResponseSerialization.m in Sources */,
+				5D52745D1FB87FFE00E7BAAE /* AFNetworkReachabilityManager.m in Sources */,
+				5D52745C1FB87FFE00E7BAAE /* AFHTTPSessionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,6 +568,10 @@
 				);
 				INFOPLIST_FILE = "授权/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/授权",
+				);
 				OTHER_LDFLAGS = "-fobjc-arc";
 				PRODUCT_BUNDLE_IDENTIFIER = "foxconn.com.--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -556,6 +588,10 @@
 				);
 				INFOPLIST_FILE = "授权/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/授权",
+				);
 				OTHER_LDFLAGS = "-fobjc-arc";
 				PRODUCT_BUNDLE_IDENTIFIER = "foxconn.com.--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
